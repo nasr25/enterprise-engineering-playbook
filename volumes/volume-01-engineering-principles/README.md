@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This volume defines the mandatory engineering principles that apply to every current and future software project, regardless of technology, deployment model, team, vendor, or use of AI-assisted development.
+This volume defines the mandatory engineering principles and governance controls that apply to every current and future software project, regardless of technology, deployment model, team, vendor, or use of AI-assisted development.
 
 ## Scope
 
@@ -29,7 +29,18 @@ Engineering decisions should prioritize:
 
 Delivery speed must not be achieved by bypassing mandatory security, authorization, validation, testing, or audit controls.
 
-## Initial Rule Set
+## Chapters
+
+1. [Vision and Objectives](01-vision-and-objectives.md)
+2. [Engineering Philosophy](02-engineering-philosophy.md)
+3. [Rule Classification and Identifiers](03-rule-classification.md)
+4. [Architecture Governance](04-architecture-governance.md)
+5. [Architecture Decision Records](05-architecture-decision-records.md)
+6. [Exception Management](06-exception-management.md)
+7. [AI-Assisted Engineering Contract](07-ai-engineering-contract.md)
+8. [Enterprise Definition of Done](08-definition-of-done.md)
+
+## Foundational Rule Set
 
 ### ENG-001 — Security by Design
 
@@ -65,15 +76,6 @@ Exceptions to mandatory rules **MUST** be documented, risk-assessed, approved, t
 
 AI-generated or AI-modified code **MUST** undergo the same review, testing, security, documentation, and approval requirements as human-written code.
 
-## Planned Chapters
+## Next Development Areas
 
-- Engineering philosophy and decision priorities
-- Architecture governance
-- Modularity and dependency management
-- Configuration and environment management
-- Error-handling principles
-- Documentation requirements
-- Technical debt management
-- Definition of Done
-- Exception governance
-- AI-assisted engineering contract
+The next increment will expand this volume with documentation standards, technical debt governance, configuration principles, compliance evidence, review cadence, and reusable governance templates.
