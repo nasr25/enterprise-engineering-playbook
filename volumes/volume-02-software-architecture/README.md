@@ -22,10 +22,17 @@ These standards apply to all new systems, major enhancements, integrations, mode
 10. [Multi-Tenancy Architecture](10-multitenancy-architecture.md)
 11. [Distributed Transactions and Consistency](11-distributed-transactions.md)
 12. [Caching Architecture](12-caching-architecture.md)
+13. [Deployment Topology](13-deployment-topology.md)
+14. [Security Architecture](14-security-architecture.md)
+15. [Observability Architecture](15-observability-architecture.md)
+16. [Scalability and Capacity](16-scalability-and-capacity.md)
+17. [Availability and Disaster Recovery](17-availability-and-disaster-recovery.md)
+18. [Reference Architectures](18-reference-architectures.md)
+19. [Architecture Review Checklist](19-architecture-review-checklist.md)
 
 ## Rule Namespace
 
-Rules in this volume use the `ARC` prefix. The current rule set covers `ARC-001` through `ARC-140`.
+Rules in this volume use the `ARC` prefix. The completed rule set covers `ARC-001` through `ARC-208`.
 
 ## Core Position
 
