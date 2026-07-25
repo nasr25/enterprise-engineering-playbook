@@ -1,0 +1,22 @@
+# Transactions, Concurrency, and Integrity
+
+- **DB-051** — Define transactional boundaries around business invariants, not controller or method boundaries by convenience.
+- **DB-052** — Keep transactions as short as possible and exclude network calls, user interaction, and long-running computation.
+- **DB-053** — Choose isolation levels from demonstrated anomaly and contention requirements.
+- **DB-054** — Document whether workflows tolerate dirty reads, non-repeatable reads, phantoms, write skew, or lost updates.
+- **DB-055** — Use optimistic concurrency for low-contention workflows and verify version or timestamp tokens on every write.
+- **DB-056** — Use pessimistic locking only when contention and invariant requirements justify its blocking and deadlock cost.
+- **DB-057** — Access shared resources in a consistent order to reduce deadlocks.
+- **DB-058** — Detect deadlocks and transient serialization failures and retry only safe, bounded, idempotent units of work.
+- **DB-059** — Do not retry transactions blindly when external side effects may already have occurred.
+- **DB-060** — Use an outbox or equivalent atomic publication pattern when database changes and event publication must be consistent.
+- **DB-061** — Distributed transactions require explicit architecture approval and failure-mode testing.
+- **DB-062** — Prefer sagas, compensating actions, reconciliation, and idempotency for cross-service workflows.
+- **DB-063** — Enforce stable invariants with constraints in addition to application validation.
+- **DB-064** — Application validation must produce usable errors, while database constraints remain the final integrity boundary.
+- **DB-065** — Every write endpoint and message consumer must define duplicate-submission behavior.
+- **DB-066** — Idempotency records must be durable for the full retry and replay window.
+- **DB-067** — Sequence generation must remain correct across replicas, shards, and failover events.
+- **DB-068** — Counters and aggregates under concurrency must use atomic operations, locking, or conflict detection.
+- **DB-069** — Avoid read-modify-write logic that assumes no concurrent change.
+- **DB-070** — Reconciliation jobs must detect and repair eventual-consistency drift for critical derived data.
