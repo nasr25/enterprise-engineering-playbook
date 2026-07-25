@@ -16,10 +16,16 @@ These standards apply to all new systems, major enhancements, integrations, mode
 4. [Integration Architecture](04-integration-architecture.md)
 5. [Resilience and Failure Design](05-resilience-and-failure-design.md)
 6. [Architecture Views and Evidence](06-architecture-views-and-evidence.md)
+7. [Architecture Patterns](07-architecture-patterns.md)
+8. [Architecture Anti-Patterns](08-architecture-antipatterns.md)
+9. [Data Architecture](09-data-architecture.md)
+10. [Multi-Tenancy Architecture](10-multitenancy-architecture.md)
+11. [Distributed Transactions and Consistency](11-distributed-transactions.md)
+12. [Caching Architecture](12-caching-architecture.md)
 
 ## Rule Namespace
 
-Rules in this volume use the `ARC` prefix.
+Rules in this volume use the `ARC` prefix. The current rule set covers `ARC-001` through `ARC-140`.
 
 ## Core Position
 
