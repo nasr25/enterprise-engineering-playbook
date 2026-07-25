@@ -1,0 +1,22 @@
+# Schema Evolution and Data Lifecycle
+
+- **DB-091** — All schema changes must be version-controlled, repeatable, reviewable, and deployed through automated migrations.
+- **DB-092** — Production schema changes must not depend on manual console steps.
+- **DB-093** — Use expand-and-contract changes for backward-compatible rolling deployments.
+- **DB-094** — Do not rename, remove, narrow, or reinterpret fields until all readers and writers are migrated.
+- **DB-095** — Separate schema changes from large data backfills when their operational risk differs.
+- **DB-096** — Large migrations must be resumable, observable, throttled, and safe to retry.
+- **DB-097** — Migration tools must prevent conflicting concurrent execution.
+- **DB-098** — Every migration must define rollback, roll-forward, or restoration strategy.
+- **DB-099** — Destructive changes require verified backups and explicit approval.
+- **DB-100** — Migration testing must use production-like volume and representative data distribution.
+- **DB-101** — Retention periods must be defined from legal, regulatory, contractual, operational, and business requirements.
+- **DB-102** — Data must not be retained indefinitely without an approved purpose.
+- **DB-103** — Deletion, anonymization, archival, and legal-hold behavior must be explicit for each data class.
+- **DB-104** — Soft deletion must not replace required physical deletion or anonymization.
+- **DB-105** — Soft-deleted data must be excluded consistently from normal access paths and uniqueness rules.
+- **DB-106** — Archival stores must preserve integrity, encryption, discoverability, access control, and restoration procedures.
+- **DB-107** — Purge jobs must be idempotent, observable, auditable, and bounded.
+- **DB-108** — Change history must distinguish who changed data, what changed, when, why, and through which channel where required.
+- **DB-109** — Audit records must be protected from alteration and must not contain unnecessary secrets or sensitive payloads.
+- **DB-110** — CDC streams must define schema evolution, ordering, replay, retention, consumer recovery, and privacy controls.
