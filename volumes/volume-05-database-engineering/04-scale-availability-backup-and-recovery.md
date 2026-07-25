@@ -1,0 +1,22 @@
+# Scale, Availability, Backup, and Recovery
+
+- **DB-071** — Define service-level objectives, RPO, RTO, durability, and consistency requirements for every production datastore.
+- **DB-072** — Scaling decisions must use measured workload, growth forecasts, data distribution, and failure-domain analysis.
+- **DB-073** — Prefer vertical and query optimization before introducing partitioning or sharding complexity when they meet objectives.
+- **DB-074** — Partition keys must support pruning, retention, balanced distribution, and operational maintenance.
+- **DB-075** — Shard keys must minimize hotspots and cross-shard transactions and must permit future rebalancing.
+- **DB-076** — Global uniqueness, ordering, joins, aggregates, and migrations must have explicit strategies in sharded systems.
+- **DB-077** — Replication topology must document consistency, lag tolerance, promotion, failback, and split-brain prevention.
+- **DB-078** — Applications using read replicas must tolerate replication lag and read-after-write inconsistency.
+- **DB-079** — Automatic failover must be tested under realistic network and dependency failures.
+- **DB-080** — High availability must span appropriate infrastructure failure domains.
+- **DB-081** — Backups must be automated, encrypted, monitored, access-controlled, and retained according to policy.
+- **DB-082** — Backup success is not sufficient; restoration must be tested on a defined schedule.
+- **DB-083** — Point-in-time recovery configuration must match the approved RPO.
+- **DB-084** — Backup copies must be isolated from production credentials and destructive administrative paths.
+- **DB-085** — Critical data requires an immutable or offline recovery copy where risk assessment demands it.
+- **DB-086** — Restore procedures must include schema, data, encryption keys, configuration, users, permissions, and dependent services.
+- **DB-087** — Disaster recovery exercises must measure actual recovery time and data loss against targets.
+- **DB-088** — Failover and restore runbooks must identify decision authority, validation steps, rollback, and communications.
+- **DB-089** — Capacity reserves must cover failover operation with a failed node or site.
+- **DB-090** — Recovery tests must verify business-level correctness, not only that the database starts.

@@ -1,0 +1,22 @@
+# Security, Privacy, and Multi-Tenancy
+
+- **DB-111** — Classify stored data and apply controls proportional to sensitivity and business impact.
+- **DB-112** — Encrypt database traffic in transit and verify server identity.
+- **DB-113** — Encrypt sensitive data at rest, including backups, replicas, snapshots, exports, and temporary files.
+- **DB-114** — Encryption keys must be separated from encrypted data and governed by rotation, recovery, and access policies.
+- **DB-115** — Database credentials and connection strings must come from approved secret-management mechanisms.
+- **DB-116** — Use separate identities for applications, migrations, operations, reporting, backup, and administration.
+- **DB-117** — Grant least privilege at database, schema, object, row, operation, and environment levels.
+- **DB-118** — Applications must not connect using owner, root, sysadmin, or equivalent administrative accounts.
+- **DB-119** — Privileged access must be time-bound, attributable, monitored, and reviewed.
+- **DB-120** — Rotate credentials and keys without requiring unsafe service interruption.
+- **DB-121** — Restrict database network access to approved workloads and management paths.
+- **DB-122** — Audit authentication failures, privilege changes, administrative actions, and access to highly sensitive data.
+- **DB-123** — Mask or synthesize sensitive production data before use in non-production environments.
+- **DB-124** — Logs, traces, exports, and diagnostics must not expose credentials or unnecessary personal data.
+- **DB-125** — Tenant identity must be derived from trusted authenticated context, never from an unverified client value alone.
+- **DB-126** — Every tenant-owned record must carry an enforceable tenant boundary unless isolation is physical.
+- **DB-127** — Tenant filtering must be centralized and enforced by repository, policy, or row-level security controls.
+- **DB-128** — Composite uniqueness and foreign keys in shared schemas must include tenant identity where required.
+- **DB-129** — Cross-tenant administrative operations require explicit authorization, audit, and user-visible context.
+- **DB-130** — Test suites must include attempted cross-tenant reads, writes, joins, exports, caches, jobs, and backups.
