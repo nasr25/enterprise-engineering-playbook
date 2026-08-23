@@ -1,0 +1,22 @@
+# AI Governance and Risk
+
+- **AI-001 — Declared Purpose:** Every AI capability MUST have a documented business purpose, owner, intended users, and prohibited uses.
+- **AI-002 — Risk Classification:** AI use cases MUST be classified by impact, autonomy, data sensitivity, and consequence of incorrect output.
+- **AI-003 — Accountable Owner:** Every production AI system MUST have a named business owner and technical owner.
+- **AI-004 — Human Accountability:** Accountability MUST remain with authorized humans; an AI component MUST NOT be treated as the accountable decision maker.
+- **AI-005 — Architecture Review:** AI systems MUST pass architecture review before production use.
+- **AI-006 — Security Review:** AI systems processing enterprise data MUST pass security review and threat modeling.
+- **AI-007 — Privacy Review:** Processing of personal or sensitive data MUST be reviewed for lawful purpose, minimization, retention, and disclosure risk.
+- **AI-008 — Use-Case Boundaries:** Supported and unsupported tasks MUST be explicit and testable.
+- **AI-009 — Impact Assessment:** High-impact AI MUST have a documented impact and failure-mode assessment.
+- **AI-010 — Approval Gates:** Higher-risk systems MUST require stronger pre-production approval and evidence.
+- **AI-011 — Change Governance:** Material model, prompt, retrieval, tool, policy, or dataset changes MUST follow controlled change management.
+- **AI-012 — Inventory:** Production models, providers, versions, datasets, embeddings, prompts, and AI services MUST be inventoried.
+- **AI-013 — Third-Party Assessment:** External AI services MUST be assessed for security, privacy, data use, retention, residency, availability, and exit risk.
+- **AI-014 — Data Processing Terms:** Enterprise data MUST NOT be sent to an external AI service without approved contractual and technical controls.
+- **AI-015 — No Hidden AI Dependency:** Critical workflows MUST document where AI affects outcomes and what happens if AI is unavailable.
+- **AI-016 — Fallback:** Critical AI-dependent processes MUST define safe degradation or manual fallback.
+- **AI-017 — Auditability:** High-impact AI actions and relevant inputs, outputs, model versions, and decisions MUST be auditable subject to privacy constraints.
+- **AI-018 — Exception Governance:** Deviations from AI standards MUST be documented, risk-accepted, time-bound, and owned.
+- **AI-019 — Decommissioning:** Retired models, endpoints, credentials, datasets, indexes, and integrations MUST be securely decommissioned.
+- **AI-020 — Periodic Review:** Production AI use cases MUST be periodically reassessed for risk, performance, necessity, and compliance.
