@@ -1,0 +1,27 @@
+# MLOps, Deployment, and Operations
+
+- **AI-111 — Environment Separation:** Development, evaluation, staging, and production AI environments MUST be appropriately separated.
+- **AI-112 — Automated Delivery:** Repeatable model packaging and deployment SHOULD be automated through controlled pipelines.
+- **AI-113 — Immutable Version:** A production model version MUST be immutable; changes create a new version.
+- **AI-114 — Deployment Approval:** Production promotion MUST reference approved evaluation evidence.
+- **AI-115 — Safe Rollout:** High-impact model releases SHOULD use shadow, canary, staged, or equivalent controlled rollout where practical.
+- **AI-116 — Rollback:** Model deployments MUST have a tested rollback or safe fallback path.
+- **AI-117 — Runtime Configuration:** Model, prompt, retrieval, and threshold configuration MUST be versioned and environment-controlled.
+- **AI-118 — Observability:** Production AI MUST expose operational telemetry for availability, latency, errors, resource use, and relevant model behavior.
+- **AI-119 — Input Monitoring:** Material input quality and distribution changes SHOULD be monitored where measurable.
+- **AI-120 — Output Monitoring:** Output distributions, refusals, invalid responses, or domain-specific quality indicators SHOULD be monitored.
+- **AI-121 — Performance Drift:** Systems MUST define how model performance degradation will be detected when ground truth is available.
+- **AI-122 — Feedback Quality:** User feedback MUST NOT be treated automatically as correct labels without validation.
+- **AI-123 — Retraining Trigger:** Retraining MUST occur for defined reasons, not merely on an arbitrary schedule.
+- **AI-124 — Retraining Evaluation:** Retrained models MUST pass the same or stronger evaluation gates as initial models.
+- **AI-125 — Champion-Challenger:** Replacement models SHOULD be compared against the current production model using consistent criteria.
+- **AI-126 — Capacity Planning:** Inference capacity MUST account for peak concurrency, model loading, accelerator limits, and failure scenarios.
+- **AI-127 — Timeout and Retry:** AI calls MUST use bounded timeouts and safe retry behavior.
+- **AI-128 — Cost Guardrails:** Usage-based AI services MUST have budgets, quotas, alerts, or equivalent cost controls.
+- **AI-129 — Dependency Resilience:** Critical workflows MUST define behavior for model provider, vector database, feature store, or accelerator failure.
+- **AI-130 — Offline Operation:** Systems required to operate in isolated networks MUST package all required models, libraries, assets, and dependencies locally.
+- **AI-131 — External Call Inventory:** On-premises AI deployments MUST document and eliminate unauthorized external network dependencies.
+- **AI-132 — Hardware Compatibility:** Model deployment MUST validate supported CPU, GPU, accelerator, memory, driver, and runtime combinations.
+- **AI-133 — Backup Scope:** Required model artifacts, configuration, indexes, metadata, and evaluation evidence MUST be included in continuity planning.
+- **AI-134 — Restore Validation:** AI platform recovery procedures MUST be tested, including restoration of model and retrieval dependencies.
+- **AI-135 — Operational Runbook:** Production AI services MUST have runbooks for common failures, degradation, rollback, and escalation.
