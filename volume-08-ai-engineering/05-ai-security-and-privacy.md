@@ -1,0 +1,27 @@
+# AI Security and Privacy
+
+- **AI-086 — AI Threat Model:** AI systems MUST include threats unique to models, prompts, retrieval, training data, tools, and model supply chains.
+- **AI-087 — Least Privilege:** Model services and AI workflows MUST receive only permissions required for their task.
+- **AI-088 — Credential Isolation:** Credentials MUST NOT be embedded in prompts, model weights, datasets, notebooks, or source code.
+- **AI-089 — Secret Redaction:** Secrets and credentials MUST be prevented from entering training, evaluation, logging, and retrieval corpora where feasible.
+- **AI-090 — Sensitive Prompt Logging:** Prompt and response logging MUST be minimized, access-controlled, and aligned with data classification.
+- **AI-091 — Model Endpoint Authentication:** Non-public model endpoints MUST require strong authentication and authorization.
+- **AI-092 — Rate Controls:** AI endpoints MUST apply appropriate quotas, rate limits, concurrency limits, and abuse controls.
+- **AI-093 — Resource Abuse:** Systems MUST defend against inputs designed to cause excessive tokens, compute, memory, tool calls, or cost.
+- **AI-094 — Training Poisoning:** Data ingestion pipelines MUST consider malicious or corrupted training and tuning data.
+- **AI-095 — Retrieval Poisoning:** RAG ingestion MUST validate source authority and consider malicious instructions embedded in indexed content.
+- **AI-096 — Model Supply Chain:** Models, adapters, tokenizers, libraries, and artifacts MUST come from approved and verifiable sources.
+- **AI-097 — Artifact Integrity:** Model artifacts SHOULD be checksummed or signed and verified before deployment.
+- **AI-098 — Deserialization Safety:** Untrusted model formats or serialized objects MUST NOT be loaded with unsafe deserialization mechanisms.
+- **AI-099 — Sandbox Untrusted Code:** AI-generated or user-supplied executable code MUST run only in appropriately isolated environments when execution is required.
+- **AI-100 — Network Egress:** AI runtimes and agent tools SHOULD use explicit egress allowlists for sensitive environments.
+- **AI-101 — Data Exfiltration Tests:** AI applications MUST test whether protected context can be extracted through prompts or tool misuse.
+- **AI-102 — Cross-Tenant Isolation:** Multi-tenant AI systems MUST test isolation across prompts, caches, vector stores, files, memory, and tools.
+- **AI-103 — Cache Isolation:** Semantic and response caches MUST preserve authorization and tenant boundaries.
+- **AI-104 — Memory Privacy:** Conversational or agent memory MUST have explicit scope, retention, deletion, and authorization rules.
+- **AI-105 — Privacy Attacks:** High-risk models SHOULD assess membership inference, memorization, or extraction risk when relevant.
+- **AI-106 — Output Data Leakage:** Outputs MUST be evaluated for unintended disclosure of sensitive training, retrieved, or tool-accessed data.
+- **AI-107 — Red-Team Testing:** Higher-risk AI systems SHOULD undergo adversarial security and misuse testing before production.
+- **AI-108 — Incident Handling:** AI security incidents MUST integrate with enterprise incident response and preserve relevant forensic evidence.
+- **AI-109 — Emergency Disable:** High-risk AI capabilities MUST have a controlled mechanism to disable model access, retrieval, tools, or autonomous actions.
+- **AI-110 — Security Regression:** Security controls MUST be revalidated after material model, provider, retrieval, prompt, or tool changes.
