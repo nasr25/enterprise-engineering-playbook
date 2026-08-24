@@ -1,0 +1,22 @@
+# Runbooks, Operations, and Change Safety
+
+- **SRE-141 — Runbook Coverage:** Critical recurring operational tasks and known failure modes MUST have runbooks.
+- **SRE-142 — Executable Steps:** Runbooks MUST contain concrete, ordered, environment-appropriate actions rather than vague guidance.
+- **SRE-143 — Preconditions:** Runbooks MUST identify required access, tools, approvals, and preconditions.
+- **SRE-144 — Validation Steps:** Runbooks MUST include checks that confirm whether an action succeeded.
+- **SRE-145 — Rollback Steps:** Material operational procedures MUST include rollback or recovery actions where feasible.
+- **SRE-146 — Safe Commands:** Destructive or high-impact commands MUST be clearly identified and SHOULD require explicit confirmation.
+- **SRE-147 — Environment Identification:** Operational procedures MUST prevent accidental execution against the wrong environment.
+- **SRE-148 — Credential Handling:** Runbooks MUST NOT embed passwords, private keys, or reusable secrets.
+- **SRE-149 — Automation Preference:** Stable repetitive procedures SHOULD be automated once failure modes and safeguards are understood.
+- **SRE-150 — Manual Fallback:** Critical automation SHOULD have documented manual fallback where operationally practical.
+- **SRE-151 — Change Window Planning:** High-risk changes MUST consider business timing, dependency availability, staffing, and rollback time.
+- **SRE-152 — Pre-Change Checks:** Production changes MUST verify backups, health, capacity, dependencies, and rollback prerequisites appropriate to risk.
+- **SRE-153 — Change Observability:** Material changes MUST define what telemetry will be watched during and after deployment.
+- **SRE-154 — Progressive Change:** High-risk changes SHOULD reduce blast radius through staged, canary, segmented, or equivalent techniques.
+- **SRE-155 — Stop Conditions:** Change plans MUST define conditions that trigger pause, rollback, or escalation.
+- **SRE-156 — Post-Change Validation:** Production changes MUST verify expected user-facing behavior and critical dependencies after execution.
+- **SRE-157 — Emergency Change Evidence:** Emergency changes MUST still preserve implementation, risk, rollback, validation, and retrospective evidence.
+- **SRE-158 — Operational Access Review:** Production operator and automation privileges MUST be periodically reviewed.
+- **SRE-159 — Knowledge Freshness:** Runbooks and operational documents MUST be updated after relevant incidents, architecture changes, or failed procedures.
+- **SRE-160 — Operational Drills:** Critical procedures such as failover, certificate renewal, credential rotation, and emergency disable SHOULD be periodically rehearsed.
