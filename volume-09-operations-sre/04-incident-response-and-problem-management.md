@@ -1,0 +1,27 @@
+# Incident Response and Problem Management
+
+- **SRE-066 — Incident Definition:** Production incidents MUST have documented severity criteria based on user, business, security, and operational impact.
+- **SRE-067 — Incident Commander:** Major incidents MUST assign a clear incident commander or equivalent coordinator.
+- **SRE-068 — Role Separation:** Major incidents SHOULD separate technical investigation, communication, and coordination roles when staffing allows.
+- **SRE-069 — Initial Triage:** Responders MUST quickly identify scope, severity, affected services, and immediate containment options.
+- **SRE-070 — Mitigation First:** During active incidents, safe service restoration SHOULD take priority over root-cause analysis.
+- **SRE-071 — Change Freeze:** High-severity incidents SHOULD restrict unrelated production changes until stability is restored.
+- **SRE-072 — Communication Cadence:** Major incidents MUST define an internal status-update cadence and communication owner.
+- **SRE-073 — Stakeholder Communication:** User or stakeholder communication MUST be accurate, timely, and avoid unsupported speculation.
+- **SRE-074 — Timeline Capture:** Major incidents MUST preserve a timeline of key observations, decisions, actions, and state changes.
+- **SRE-075 — Evidence Preservation:** Logs, metrics, traces, configuration, and other relevant evidence MUST be preserved for material incidents.
+- **SRE-076 — Escalation:** Escalation paths MUST be defined for unresolved, cross-team, security-sensitive, or vendor-dependent incidents.
+- **SRE-077 — Vendor Coordination:** Critical external vendors MUST have documented support and escalation channels.
+- **SRE-078 — Recovery Validation:** Service restoration MUST be verified from user-facing and dependency perspectives before incident closure.
+- **SRE-079 — Incident Closure:** Incidents MUST not be closed solely because alerts cleared; impact and stability MUST be verified.
+- **SRE-080 — Post-Incident Review:** Significant incidents MUST receive a documented post-incident review.
+- **SRE-081 — Blameless Analysis:** Reviews SHOULD focus on system, process, control, and decision conditions rather than individual blame.
+- **SRE-082 — Root Cause Depth:** Root-cause analysis MUST distinguish triggering events from underlying contributing conditions.
+- **SRE-083 — Corrective Actions:** Post-incident actions MUST have owners, priorities, and target dates.
+- **SRE-084 — Action Verification:** Corrective actions MUST be verified when completed rather than marked done solely by assertion.
+- **SRE-085 — Recurrence Tracking:** Repeated incident patterns MUST be tracked as reliability problems even if individual incidents are low severity.
+- **SRE-086 — Problem Records:** Chronic or systemic reliability issues SHOULD be managed through explicit problem records or equivalent backlog items.
+- **SRE-087 — Known Error Documentation:** Known failure modes and workarounds SHOULD be documented where recurrence is likely.
+- **SRE-088 — Incident Metrics:** Organizations SHOULD track meaningful metrics such as detection, acknowledgement, mitigation, restoration, and recurrence.
+- **SRE-089 — Learning Distribution:** Relevant incident learnings SHOULD be shared across teams with similar technologies or risks.
+- **SRE-090 — Review Effectiveness:** Incident processes and corrective-action quality MUST be periodically reviewed for effectiveness.
