@@ -2,7 +2,7 @@
 
 A version-controlled, technology-neutral engineering standard for designing, building, securing, testing, deploying, operating, and governing enterprise software systems.
 
-> Status: Core playbook complete through Volumes 01–10. Ongoing work is limited to maintenance, hardening, cross-reference improvements, and future standards extensions.
+> Status: Core playbook complete through Volumes 01–11. Ongoing work is limited to maintenance, hardening, cross-reference improvements, and future standards extensions.
 
 ## Core Objectives
 
@@ -12,6 +12,7 @@ A version-controlled, technology-neutral engineering standard for designing, bui
 - Permission/policy-based authorization without hardcoded business role names
 - DevSecOps, supply-chain security, testing, observability, and operational readiness
 - Controlled use of AI/ML, generative AI, RAG, and agentic systems
+- Secure and maintainable mobile application engineering across iOS, Android, and Flutter
 - Reusable project templates, review gates, and engineering evidence
 
 ## Volume Map
@@ -26,8 +27,9 @@ A version-controlled, technology-neutral engineering standard for designing, bui
 8. **AI Engineering** — AI governance, ML lifecycle, model evaluation, LLM/RAG, AI security, MLOps, agents, human oversight, and responsible AI.
 9. **Operations & SRE** — service ownership, SLI/SLO/SLA, error budgets, observability, alerting, incidents, reliability, capacity, backup, DR, runbooks, and production readiness.
 10. **Enterprise Templates & Checklists** — reusable project charter, ADR, threat model, database review, API contract, PR review, release plan, PRR, incident review, AI assessment, and master engineering checklist.
+11. **Mobile Application Engineering** — mobile architecture, identity/security, secure local data, offline synchronization, device integrations, push/deep links, testing, accessibility, performance, signing/store releases, and explicit Flutter engineering guidance.
 
-All ten volumes are organized consistently under `volumes/`.
+All eleven volumes are organized consistently under `volumes/`.
 
 ## Start a New Project
 
@@ -38,7 +40,7 @@ For every new project:
 3. Complete the Project Engineering Charter before implementation begins.
 4. Identify the applicable volumes and rule namespaces.
 5. Record material architectural decisions using ADRs.
-6. Complete threat modeling, database review, API/integration review, and AI assessment when applicable.
+6. Complete threat modeling, database review, API/integration review, mobile review, and AI assessment when applicable.
 7. Apply the Master Engineering Checklist before production release.
 8. Record exceptions explicitly; never silently ignore an applicable rule.
 
@@ -55,6 +57,7 @@ For every new project:
 | Testing / Quality | `TST` |
 | AI Engineering | `AI` |
 | Operations / SRE | `SRE` |
+| Mobile Application Engineering | `MOB` |
 
 ## Non-Negotiable Engineering Positions
 
@@ -62,6 +65,7 @@ For every new project:
 - Security controls MUST be designed into architecture and delivery, not appended before release.
 - Database indexing MUST follow actual access patterns and be validated with evidence.
 - Secrets MUST NOT be committed to repositories or embedded in application code.
+- Mobile applications MUST be treated as untrusted clients; local UI, navigation, biometric checks, or device state MUST NOT replace server-side authorization.
 - Production changes MUST be traceable, testable, observable, and reversible or have a documented roll-forward strategy.
 - Critical systems MUST have validated backup, restore, recovery, monitoring, and operational ownership.
 - AI-generated output MUST NOT bypass normal software engineering, security, authorization, testing, or change-control requirements.
