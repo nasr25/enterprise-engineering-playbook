@@ -16,7 +16,7 @@ Record:
 
 ## 2. Establish Project Engineering Evidence
 
-Copy these templates from `volume-10-enterprise-templates-checklists/` into the project repository when applicable:
+Copy these templates from `volumes/volume-10-enterprise-templates-checklists/` into the project repository when applicable:
 
 - Project Engineering Charter
 - Architecture Decision Record

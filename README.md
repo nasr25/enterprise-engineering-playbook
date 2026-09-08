@@ -27,12 +27,14 @@ A version-controlled, technology-neutral engineering standard for designing, bui
 9. **Operations & SRE** — service ownership, SLI/SLO/SLA, error budgets, observability, alerting, incidents, reliability, capacity, backup, DR, runbooks, and production readiness.
 10. **Enterprise Templates & Checklists** — reusable project charter, ADR, threat model, database review, API contract, PR review, release plan, PRR, incident review, AI assessment, and master engineering checklist.
 
+All ten volumes are organized consistently under `volumes/`.
+
 ## Start a New Project
 
 For every new project:
 
 1. Read `GETTING-STARTED.md`.
-2. Copy the relevant templates from `volume-10-enterprise-templates-checklists/` into the project repository.
+2. Copy the relevant templates from `volumes/volume-10-enterprise-templates-checklists/` into the project repository.
 3. Complete the Project Engineering Charter before implementation begins.
 4. Identify the applicable volumes and rule namespaces.
 5. Record material architectural decisions using ADRs.
