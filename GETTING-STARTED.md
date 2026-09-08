@@ -13,6 +13,7 @@ Record:
 - External integrations and third-party dependencies
 - Regulatory or contractual obligations
 - Whether AI/ML is used
+- Whether a mobile application is included and which target platforms/frameworks are used
 
 ## 2. Establish Project Engineering Evidence
 
@@ -47,6 +48,7 @@ Do not delete irrelevant sections silently. Mark them `Not Applicable` with a sh
 - Volume 04 — Frontend Engineering for web, SPA, desktop-web, or client UI code.
 - Volume 05 — Database Engineering for relational, NoSQL, cache, search, analytics, or persistence workloads.
 - Volume 08 — AI Engineering for ML, LLM, RAG, embeddings, agents, AI assistants, or model integrations.
+- Volume 11 — Mobile Application Engineering for iOS, Android, Flutter, React Native, native mobile, and comparable mobile clients.
 
 ## 4. Authorization Design Rule
 
@@ -62,6 +64,8 @@ The exact model may vary, but the system must preserve these properties:
 - authorization is enforced server-side;
 - resource ownership / scope prevents IDOR/BOLA;
 - privileged bypasses are rare, explicit, logged, and independently protected.
+
+For mobile applications, local navigation guards, biometric checks, hidden UI controls, or cached device state do not replace backend authorization.
 
 ## 5. Database Design Rule
 
@@ -85,6 +89,8 @@ At minimum:
 - run applicable SAST, SCA, secret scanning, and runtime security testing;
 - remediate critical/high findings or use the formal exception process;
 - log privileged and security-relevant actions without exposing secrets.
+
+Mobile applications must additionally consider secure local storage, deep links, push notifications, device permissions, external intents/files, offline authorization, signing credentials, and store/release controls.
 
 ## 7. Quality Gates
 
@@ -113,4 +119,4 @@ An undocumented deviation is non-conformance, not an exception.
 
 ## 10. Release Gate
 
-Before production, complete the Project Master Engineering Checklist and Production Readiness Review. Release only when blocking findings are closed or explicitly risk-accepted by the appropriate authority.
+Before production, complete the Project Master Engineering Checklist and Production Readiness Review. For mobile applications, also complete the Mobile Engineering Review Checklist in Volume 11. Release only when blocking findings are closed or explicitly risk-accepted by the appropriate authority.
