@@ -1,0 +1,22 @@
+# Model Development and Evaluation
+
+- **AI-041 — Baseline:** Model development MUST compare against a meaningful baseline, including non-AI solutions when appropriate.
+- **AI-042 — Success Metrics:** Acceptance metrics MUST be defined before final evaluation.
+- **AI-043 — Metric Fitness:** Metrics MUST reflect the actual business and safety consequences of false positives, false negatives, ranking errors, or generation errors.
+- **AI-044 — Holdout Integrity:** Final evaluation data MUST be protected from iterative tuning contamination.
+- **AI-045 — Reproducibility:** Training runs MUST capture code, configuration, dataset, environment, seed where relevant, and model version.
+- **AI-046 — Experiment Tracking:** Material experiments MUST record hypotheses, parameters, metrics, and outcomes.
+- **AI-047 — Model Registry:** Production models MUST be uniquely versioned and traceable to evaluation evidence.
+- **AI-048 — Hyperparameter Control:** Material hyperparameters MUST be recorded and reviewed as part of reproducibility.
+- **AI-049 — Error Analysis:** Evaluation MUST include qualitative and segmented error analysis, not aggregate scores alone.
+- **AI-050 — Edge Cases:** Known edge cases and rare but high-impact scenarios MUST be represented in testing.
+- **AI-051 — Robustness:** Models MUST be tested against realistic noise, malformed input, missing data, and distribution variation.
+- **AI-052 — Calibration:** Systems using confidence or probability MUST assess calibration where decisions depend on those values.
+- **AI-053 — Threshold Governance:** Decision thresholds MUST be justified, versioned, and change-controlled.
+- **AI-054 — Segment Evaluation:** Performance MUST be evaluated across materially different populations or operational segments where applicable.
+- **AI-055 — Resource Evaluation:** Latency, memory, compute, storage, and throughput MUST be evaluated against production constraints.
+- **AI-056 — Cost Evaluation:** Variable inference and supporting infrastructure cost MUST be measured for scalable workloads.
+- **AI-057 — Explainability Fit:** Explainability techniques SHOULD match stakeholder and risk needs rather than being applied cosmetically.
+- **AI-058 — Model Card:** Production models SHOULD have a model card describing purpose, data, metrics, limitations, risks, and intended use.
+- **AI-059 — Independent Validation:** High-impact models SHOULD receive review or validation independent from the primary model developer.
+- **AI-060 — Promotion Evidence:** No model SHOULD be promoted solely because it is newer; promotion MUST be supported by comparative evidence.
