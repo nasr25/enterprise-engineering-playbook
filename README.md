@@ -69,6 +69,7 @@ For every new project:
 - Production changes MUST be traceable, testable, observable, and reversible or have a documented roll-forward strategy.
 - Critical systems MUST have validated backup, restore, recovery, monitoring, and operational ownership.
 - AI-generated output MUST NOT bypass normal software engineering, security, authorization, testing, or change-control requirements.
+- Repositories MUST follow `AI-DEVELOPMENT-TOOL-HYGIENE.md`: unnecessary development-assistant attribution/artifacts and unapproved AI dependencies MUST NOT be committed; legitimate product AI usage and human/legal provenance MUST be preserved.
 
 ## Governance
 
