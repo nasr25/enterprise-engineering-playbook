@@ -65,6 +65,13 @@ Use this as the final cross-volume gate. Detailed evidence SHOULD link to the ap
 - [ ] Agents/tools have bounded permissions and human approval where required.
 - [ ] Model/prompt/RAG changes are regression-tested.
 
+## AI Development Tool Hygiene
+- [ ] No unnecessary development-assistant/vendor references remain in source, comments, docs, filenames, configuration, or generated artifacts.
+- [ ] No unapproved AI/model/agent SDKs, libraries, integrations, hooks, or telemetry were introduced.
+- [ ] Commit messages and trailers contain no unnecessary AI-tool attribution such as AI-specific Co-authored-by / Generated-by / Assisted-by entries.
+- [ ] Assistant-specific hidden files, prompts, transcripts, caches, session state, and local tool artifacts are excluded unless explicitly required and reviewed.
+- [ ] Any retained AI reference is either approved product functionality or has a documented exception; legitimate human authorship, licensing, provenance, and audit evidence are preserved.
+
 ## Release Gate
 - [ ] Production Readiness Review approved.
 - [ ] Change record / implementation plan complete.
