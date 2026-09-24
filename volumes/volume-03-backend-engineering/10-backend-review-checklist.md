@@ -31,6 +31,17 @@ Use this checklist for new backend services, major API changes, integrations, ba
 - Logs, metrics, traces, health checks, dashboards, and alerts exist.
 - Capacity limits, rate limits, quotas, and graceful degradation are addressed.
 
+## Authentication Abuse Protection
+
+- Login, password reset, OTP/resend, recovery, registration, and other abuse-sensitive endpoints have explicit abuse controls.
+- Rate limiting considers appropriate dimensions such as IP/network, account identifier, device/client, endpoint, and global traffic rather than relying on IP alone.
+- Progressive backoff/challenges and MFA/step-up are applied according to risk without making CAPTCHA the sole control.
+- Lockout behavior resists attacker-induced denial of service and responses are reviewed for account enumeration.
+- Multi-instance services use coordinated/shared rate-limit state where a global view is required.
+- WAF/gateway/reverse-proxy controls reject obvious abuse early while backend controls retain account/business context.
+- Abuse metrics, alerts, limiter health, emergency tuning, and incident procedures are operationally owned.
+- Automated tests cover concurrency, boundary/reset behavior, proxy IP handling, distributed instances, and legitimate-user recovery.
+
 ## Quality and Delivery
 
 - Unit, integration, contract, security, and performance tests cover critical behavior.
