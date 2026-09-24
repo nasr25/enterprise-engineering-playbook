@@ -20,10 +20,11 @@ These standards apply to HTTP APIs, internal services, integration endpoints, ba
 8. [Background Jobs and Messaging](08-background-jobs-and-messaging.md)
 9. [Performance and Backend Security](09-performance-and-backend-security.md)
 10. [Backend Review Checklist](10-backend-review-checklist.md)
+11. [Authentication Abuse, Rate Limiting, and Automated Traffic Protection](11-authentication-abuse-rate-limiting.md)
 
 ## Rule Namespace
 
-Rules in this volume use the `BE` prefix. The completed rule set covers `BE-001` through `BE-144`.
+Rules in this volume use the `BE` prefix. The completed rule set covers `BE-001` through `BE-180`.
 
 ## Core Position
 
