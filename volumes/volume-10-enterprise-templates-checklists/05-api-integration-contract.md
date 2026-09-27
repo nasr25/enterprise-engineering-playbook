@@ -10,6 +10,7 @@
 
 ## Contract
 - Protocol / style:
+- HTTP method policy: GET (read-only) / POST (state-changing) only; document any approved external-contract exception:
 - Versioning strategy:
 - Authentication:
 - Authorization model:
