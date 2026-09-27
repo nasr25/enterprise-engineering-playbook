@@ -6,6 +6,7 @@ Use this checklist for new backend services, major API changes, integrations, ba
 
 - API purpose, consumers, ownership, and lifecycle are documented.
 - Request and response contracts are explicit, validated, and versioned.
+- Enterprise HTTP APIs use only GET for safe/read-only operations and POST for all state-changing operations; PUT, PATCH, and DELETE are absent unless a documented exception is approved.
 - Pagination, filtering, sorting, concurrency, and idempotency are addressed where applicable.
 - Breaking changes have migration and deprecation plans.
 
