@@ -10,6 +10,7 @@ Use this as the final cross-volume gate. Detailed evidence SHOULD link to the ap
 
 ## Backend & Authorization
 - [ ] API contracts and validation are defined.
+- [ ] HTTP APIs use GET only for read-only operations and POST for mutations; PUT, PATCH, and DELETE are not used unless a documented exception is approved.
 - [ ] Authentication uses approved mechanisms.
 - [ ] Authorization is enforced server-side at operation and resource level.
 - [ ] Permissions/policies are configurable where business access changes; code does not depend on fixed business role names for authorization.
