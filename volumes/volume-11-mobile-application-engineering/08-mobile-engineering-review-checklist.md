@@ -15,6 +15,17 @@ Use this checklist before production release and for material mobile changes.
 - `MOB-179` Operations: crash/error monitoring, backend compatibility, phased rollout/mitigation where appropriate, incident response, and post-release validation are ready.
 - `MOB-180` Flutter-specific review when applicable: architecture/state conventions, secure storage, plugins/platform channels, lifecycle disposal, static analysis, tests, iOS/Android behavior, and release builds meet `MOB-146`–`MOB-170`.
 
+## Lifecycle and State Management — Additional Review (MOB-181–MOB-200)
+
+- [ ] Lifecycle coordinator and state ownership are documented; no duplicate global observers or resume refresh loops.
+- [ ] Resumed/inactive/hidden/paused/detached and process kill/relaunch are handled according to actual iOS/Android semantics.
+- [ ] Session/token revalidation, sensitive snapshot protection, background work limits and data restoration are tested.
+- [ ] Polling, WebSocket, subscriptions and API refresh are cancelled/resumed without duplicates or resource leaks.
+- [ ] Offline sync, deep links, push actions and interrupted mutations remain safe and server-authoritative.
+- [ ] Lifecycle tests and evidence cover iOS/Android interruptions, connectivity, concurrent resume and abrupt process death.
+
+See [Mobile Application Lifecycle and State Management](09-mobile-application-lifecycle-and-state-management.md).
+
 ## Minimum Production Evidence
 
 A production mobile application should normally provide:
