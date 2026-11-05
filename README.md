@@ -14,6 +14,7 @@ A version-controlled, technology-neutral engineering standard for designing, bui
 - Controlled use of AI/ML, generative AI, RAG, and agentic systems
 - Secure and maintainable mobile application engineering across iOS, Android, and Flutter
 - Reusable project templates, review gates, and engineering evidence
+- Evidence-driven performance engineering covering frontend, backend, database, infrastructure, AI response delivery, and observability
 
 ## Volume Map
 
@@ -30,6 +31,14 @@ A version-controlled, technology-neutral engineering standard for designing, bui
 11. **Mobile Application Engineering** — mobile architecture, identity/security, secure local data, offline synchronization, device integrations, push/deep links, testing, accessibility, performance, signing/store releases, and explicit Flutter engineering guidance.
 
 All eleven volumes are organized consistently under `volumes/`.
+
+## Performance Engineering — 31 Controls
+
+See **[Performance Engineering — 31-Point Control Catalog](PERFORMANCE-ENGINEERING.md)** for the implementation guidance, existing volume references, and verification evidence for all 31 topics:
+
+1. Skeleton Loading; 2. WebP / AVIF; 3. Duplicate API Calls; 4. Debounce; 5. Pagination; 6. CDN; 7. Background Job Queue; 8. N+1 Queries; 9. Brotli / Gzip; 10. Redis Caching; 11. Unused Dependencies; 12. API Timeouts; 13. AI Streaming; 14. Optimistic UI; 15. Lazy Loading; 16. Parallel Requests; 17. Database Indexes; 18. OpenTelemetry; 19. Server / Database Proximity; 20. SSR / Static Generation; 21. Third-Party Scripts; 22. Code Splitting; 23. Virtualization; 24. Required Columns Only; 25. Connection Pooling; 26. Unnecessary Re-renders; 27. Browser Caching; 28. Load Balancing; 29. Font Optimization; 30. Real User Monitoring; 31. Performance Testing.
+
+Every item must be assessed for applicability, but not every technique must be deployed. Document the measured benefit, verification evidence, and any approved exception. Apply security, privacy, accessibility, resilience and on-premise constraints throughout.
 
 ## Start a New Project
 

@@ -117,6 +117,10 @@ If a rule cannot be met, document:
 
 An undocumented deviation is non-conformance, not an exception.
 
+## Performance Engineering Assessment
+
+Review the [31-point Performance Engineering Control Catalog](PERFORMANCE-ENGINEERING.md). For each control, record Implemented / Planned / Not Applicable (with rationale) / Exception; identify measured baselines, targets, owners and evidence. Do not require CDN, Redis, SSR, AI streaming or similar technologies where the workload does not justify them.
+
 ## 10. Release Gate
 
 Before production, complete the Project Master Engineering Checklist and Production Readiness Review. For mobile applications, also complete the Mobile Engineering Review Checklist in Volume 11. Release only when blocking findings are closed or explicitly risk-accepted by the appropriate authority.
