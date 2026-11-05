@@ -26,6 +26,7 @@ Mobile rules use the prefix `MOB`.
 6. Build, Signing, Release, and Store Governance — `MOB-121`–`MOB-145`
 7. Flutter Engineering Guidance — `MOB-146`–`MOB-170`
 8. Mobile Engineering Review Checklist — `MOB-171`–`MOB-180`
+9. [Mobile Application Lifecycle and State Management](09-mobile-application-lifecycle-and-state-management.md) — `MOB-181`–`MOB-200`
 
 ## Cross-Volume Dependencies
 
@@ -49,3 +50,4 @@ Mobile projects must also apply relevant controls from:
 - Deep links, push payloads, intents, universal links, and external app inputs MUST be treated as untrusted input.
 - Production releases MUST be reproducible, signed through controlled credentials, traceable to source, and subject to review gates.
 - Flutter applications MUST follow the same architecture, security, testing, and operational controls as any other production application.
+- Lifecycle behavior MUST explicitly cover resumed, inactive, hidden, paused, detached, process death and restoration; background callbacks MUST NOT be treated as guaranteed.

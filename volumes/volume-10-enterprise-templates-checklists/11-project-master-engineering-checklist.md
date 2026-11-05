@@ -22,6 +22,11 @@ Use this as the final cross-volume gate. Detailed evidence SHOULD link to the ap
 - [ ] Accessibility, responsiveness, localization, and browser/device requirements are tested.
 - [ ] Frontend security and dependency controls pass.
 
+## Mobile Lifecycle — When Applicable
+- [ ] Foreground/background, inactive, hidden, paused, detached, process termination and restoration behavior follow [MOB-181–MOB-200](../volume-11-mobile-application-engineering/09-mobile-application-lifecycle-and-state-management.md).
+- [ ] Resume refreshes and API polling are deduplicated; session/token races, background execution limits and sensitive snapshots are controlled.
+- [ ] iOS/Android lifecycle interruption, process kill, offline recovery, deep-link/push reentry and resource cleanup have test evidence.
+
 ## Database
 - [ ] Schema integrity and naming reviewed.
 - [ ] Critical queries and indexes reviewed with evidence.
