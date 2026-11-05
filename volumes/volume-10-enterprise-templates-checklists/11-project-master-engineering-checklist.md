@@ -37,6 +37,14 @@ Use this as the final cross-volume gate. Detailed evidence SHOULD link to the ap
 - [ ] Critical/high findings are remediated or formally risk-accepted.
 - [ ] Audit logging covers privileged and sensitive actions.
 
+## Performance Engineering — 31-Point Catalog
+- [ ] All 31 controls in [Performance Engineering](../../PERFORMANCE-ENGINEERING.md) have applicability/status and owner recorded; Not Applicable and exceptions have rationale.
+- [ ] Frontend loading, image formats, duplicate calls, debounce, lazy loading, code splitting, list virtualization, fonts, re-renders, and third-party scripts are measured and optimized where relevant.
+- [ ] API pagination, bounded timeouts, concurrency, background jobs, database projections/indexes/N+1, and connection pooling are verified at representative load.
+- [ ] CDN, Redis caching, Brotli/gzip, browser caching, SSR/static generation, load balancing, and application/database placement have explicit architecture decisions where applicable.
+- [ ] AI streaming and optimistic UI are evaluated only for appropriate workloads with cancellation, authorization, rollback and error handling.
+- [ ] OpenTelemetry or equivalent tracing, privacy-approved Real User Monitoring, and performance regression testing provide evidence against agreed budgets.
+
 ## Testing & Quality
 - [ ] Requirements trace to acceptance tests.
 - [ ] Unit / integration / API / E2E coverage matches risk.
