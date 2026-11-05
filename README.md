@@ -28,7 +28,7 @@ A version-controlled, technology-neutral engineering standard for designing, bui
 8. **AI Engineering** — AI governance, ML lifecycle, model evaluation, LLM/RAG, AI security, MLOps, agents, human oversight, and responsible AI.
 9. **Operations & SRE** — service ownership, SLI/SLO/SLA, error budgets, observability, alerting, incidents, reliability, capacity, backup, DR, runbooks, and production readiness.
 10. **Enterprise Templates & Checklists** — reusable project charter, ADR, threat model, database review, API contract, PR review, release plan, PRR, incident review, AI assessment, and master engineering checklist.
-11. **Mobile Application Engineering** — mobile architecture, identity/security, secure local data, offline synchronization, device integrations, push/deep links, testing, accessibility, performance, signing/store releases, and explicit Flutter engineering guidance.
+11. **Mobile Application Engineering** — mobile architecture, identity/security, secure local data, offline synchronization, device integrations, push/deep links, testing, accessibility, performance, signing/store releases, explicit Flutter engineering guidance, and [lifecycle/state management](volumes/volume-11-mobile-application-engineering/09-mobile-application-lifecycle-and-state-management.md) (resumed/inactive/hidden/paused/detached, process death and restoration).
 
 All eleven volumes are organized consistently under `volumes/`.
 
